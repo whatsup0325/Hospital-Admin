@@ -46,11 +46,11 @@ const state=reactive({
     {name:"left",portlets:[
       {id:"l2",title:"科別統計",component:"echartPie",border:"aYinTechBorderA1",hideTitle:true},
       {id:"l3",title:"門診人次",component:"echartLine",border:"aYinTechBorderA1",hideTitle:true},
-      {id:"l1",title:"銷售任務",component:"echartBarHorizScroll",border:"aYinTechBorderA1",hideTitle:true},
+      {id:"l1",title:"看診進度",component:"echartBarHorizScroll",border:"aYinTechBorderA1",hideTitle:true},
     ]},
     {name:"right",portlets:[
       {id:"r1",title:"銷售情況",component:"counterGrid",border:"blank",hideTitle:true},
-      {id:"r2",title:"任務完成情況",component:"echartGaugeTriple",border:"aYinTechBorderA1",hideTitle:true},
+      {id:"r2",title:"門診情況",component:"echartGaugeTriple",border:"aYinTechBorderA1",hideTitle:true},
       {id:"r3",title:"業務利潤佔比",component:"echartSunburst",border:"aYinTechBorderA1"},
     ]},
     
@@ -113,7 +113,7 @@ onMounted(()=>{
         </template>
       </div>
     </div>
-    <systemTitleA2 :config="systemTitleConfig">TechUI數據可視化成型工具</systemTitleA2>
+    <systemTitleA2 :config="systemTitleConfig">今日門診數據儀錶板</systemTitleA2>
     <echartMap></echartMap>
   </div>
 </template>

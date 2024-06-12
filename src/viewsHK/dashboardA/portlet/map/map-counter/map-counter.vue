@@ -15,10 +15,10 @@ import echartLine from "./echart-line.vue"
 
 const state=reactive({
   counterList:[
-    {name:"软件年盈利",num:394,unit:"万元",barColor:$c.rel3},
-    {name:"硬件年盈利",num:42558,unit:"万元",barColor:$c.yel3},
-    {name:"服务年盈利",num:50262,unit:"万元"},
-    {name:"安全年盈利",num:50262,unit:"万元"},
+    {name:"年度總盈利",num:42558,unit:"萬元",barColor:$c.rel3},
+    {name:"年度自費盈利",num:394,unit:"萬元",barColor:$c.yel3},
+    {name:"年度健保點數",num:50262,unit:"點"},
+    {name:"欠款與呆帳",num:50262,unit:"元"},
   ]
 })
 

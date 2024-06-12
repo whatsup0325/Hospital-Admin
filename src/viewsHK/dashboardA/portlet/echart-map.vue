@@ -3,6 +3,7 @@ import { $c } from "ayin-color";
 const { proxy } = getCtx();
 import symbol from "./map/symbol.json"
 import counter from "./map/map-counter/map-counter.vue"
+import counter2 from "./map/map-counter/map-counter2.vue"
 import {httpGetMap} from "@/api/api.js"
 
 
@@ -405,6 +406,7 @@ onMounted(()=>{
 <template>
   <div class="map-wrap">
     <counter></counter>
+    <counter2></counter2>
     <div ref="map" class="full-map"></div>
   </div>
 </template>

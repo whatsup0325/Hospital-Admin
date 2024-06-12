@@ -1,10 +1,10 @@
 <script setup>
 const state=reactive({
   arry:[
-    {title:"軟件銷售額",icon:"i carbon:ibm-z-cloud-mod-stack",unit:"萬元",total:"1874"},
-    {title:"硬件銷售額",icon:"i carbon:chip",unit:"萬元",total:"3276"},
-    {title:"技術服務",icon:"i carbon:user-speaker",unit:"萬元",total:"315"},
-    {title:"安全服務",icon:"i carbon:rule",unit:"萬元",total:"769"},
+    {title:"營業額",icon:"i carbon:ibm-z-cloud-mod-stack",unit:"元",total:"799994"},
+    {title:"健保點數",icon:"i carbon:chip",unit:"點",total:"327600"},
+    {title:"看診人次",icon:"i carbon:user-speaker",unit:"人",total:"2115"},
+    {title:"自費金額",icon:"i carbon:rule",unit:"元",total:"76900"},
   ],
 })
 
