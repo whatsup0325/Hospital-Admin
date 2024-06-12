@@ -37,4 +37,5 @@ export default defineConfig({
     exclude: ['techui-vue3-lite']
   },
   plugins: [vue()],
+  base: "/Hospital-Admin/",
 })
