@@ -37,5 +37,5 @@ export default defineConfig({
     exclude: ['techui-vue3-lite']
   },
   plugins: [vue()],
-  base: "/",
+  base: process.env.VITE_BASE_URL || '/',
 })
