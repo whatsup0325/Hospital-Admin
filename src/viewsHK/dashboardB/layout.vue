@@ -129,7 +129,7 @@ onMounted(()=>{ })
         </template>
       </div>
     </div>
-    <systemTitleA1 :config="systemTitleConfig">TechUI數據可視化成型工具</systemTitleA1>
+    <systemTitleA1 :config="systemTitleConfig">今日手術數據儀錶板</systemTitleA1>
   </div>
 </template>
 <style lang="less">

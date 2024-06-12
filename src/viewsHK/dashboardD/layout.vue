@@ -123,7 +123,7 @@ onMounted(()=>{
         </template>
       </div>
     </div>
-    <systemTitleA2 :config="systemTitleConfig">TechUI數據可視化成型工具</systemTitleA2>
+    <systemTitleA2 :config="systemTitleConfig">今日戰情數據儀錶板</systemTitleA2>
     <echartMap></echartMap>
   </div>
 </template>

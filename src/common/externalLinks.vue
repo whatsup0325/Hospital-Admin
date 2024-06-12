@@ -3,11 +3,11 @@ const route = useRoute();
 const router = useRouter();
 const store = useStore();
 const inited=ref(false)
-const nav=[
-  {label:"Document",path:"http://lite.techui.net/docs"},
-  {label:"Gtihub",path:"https://github.com/ayin86/techui-vue3-lite"},
-  {label:"Premium",path:"http://techui.net/docs/"},
-]
+// const nav=[
+//   {label:"Document",path:"http://lite.techui.net/docs"},
+//   {label:"Gtihub",path:"https://github.com/ayin86/techui-vue3-lite"},
+//   {label:"Premium",path:"http://techui.net/docs/"},
+// ]
 
 const langs=[
   {label:"简中",value:"cn"},
@@ -32,6 +32,7 @@ const changLang=(item)=>{
 
 onMounted(() => {
   inited.value=true
+  // changLang(langs[1])
 })
 
 </script>
@@ -42,9 +43,9 @@ onMounted(() => {
       {{ item.label }}
       </div>
     </div>
-    <div class="lang-switch" >
+    <!-- <div class="lang-switch" >
       <div :class="`item ${store.state.lang==item.value?'active':''}`" @click="changLang(item)" v-for="(item,index) in langs">{{item.label}}</div>
-    </div>
+    </div> -->
   </div>
 </template>
 <style lang="less">
