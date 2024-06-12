@@ -37,5 +37,5 @@ export default defineConfig({
     exclude: ['techui-vue3-lite']
   },
   plugins: [vue()],
-  base: process.env.VITE_BASE_URL || '/',
+  base: "/Hospital-Admin/",
 })
