@@ -10,9 +10,9 @@ const inited=ref(false)
 // ]
 
 const langs=[
-  {label:"简中",value:"cn"},
-  {label:"繁中",value:"hk"},
-  {label:"English",value:"en"},
+  {label:"本年度",value:"cn"},
+  {label:"今日",value:"hk"},
+  // {label:"English",value:"en"},
 ]
 
 const goToLink=(item)=>{
@@ -38,14 +38,14 @@ onMounted(() => {
 </script>
 <template>
   <div :class="`external-wrap ${inited&&'inited'}`" >
-    <div class="link-wrap">
+    <!-- <div class="link-wrap">
       <div class="item" @click="goToLink(item)" v-for="item in nav">
       {{ item.label }}
       </div>
-    </div>
-    <!-- <div class="lang-switch" >
-      <div :class="`item ${store.state.lang==item.value?'active':''}`" @click="changLang(item)" v-for="(item,index) in langs">{{item.label}}</div>
     </div> -->
+    <div class="lang-switch" >
+      <div :class="`item ${store.state.lang==item.value?'active':''}`" @click="changLang(item)" v-for="(item,index) in langs">{{item.label}}</div>
+    </div>
   </div>
 </template>
 <style lang="less">
@@ -56,7 +56,7 @@ onMounted(() => {
     }
   }
   .lang-switch{  display:flex; .por; margin:0 0 0 10px;padding:0 0 0 10px;
-    &:before{content:""; .bdl(@bld6); .poa; left:0; top:10px; bottom:10px;}
+    // &:before{content:""; .bdl(@bld6); .poa; left:0; top:10px; bottom:10px;}
     .item{padding:10px; .fc(@bld6); .por; cursor: pointer; .ani;
       &:before{.poa; top:0; left:50%; .bdr(0 0 10px 10px); .fixc("x"); width: 0%; opacity: 0; .ani; content:" "; height:5px; .bgc(@cbl6);}
       &:hover{.fc(@cbl5);}
