@@ -59,7 +59,7 @@ const state=reactive({
       {id:"c4",title:"業務利潤佔比",component:"echartBarLine",border:"aYinTechBorderB4"},
     ]},
     {name:"right",portlets:[
-      {id:"r1",title:"銷售情況",component:"echartLine",border:"aYinTechBorderA1",hideTitle:true},
+      {id:"r1",title:"住院占床率",component:"echartLine",border:"aYinTechBorderA1",hideTitle:true},
       {id:"r2",title:"任務完成情況",component:"echartBarHoriz",border:"aYinTechBorderA1",hideTitle:true},
       {id:"r3",title:"業務利潤佔比",component:"echartBarHorizScroll",border:"aYinTechBorderA1",hideTitle:true},
     ]},
@@ -129,7 +129,7 @@ onMounted(()=>{ })
         </template>
       </div>
     </div>
-    <systemTitleA1 :config="systemTitleConfig">今日手術數據儀錶板</systemTitleA1>
+    <systemTitleA1 :config="systemTitleConfig">今日住院數據儀錶板</systemTitleA1>
   </div>
 </template>
 <style lang="less">

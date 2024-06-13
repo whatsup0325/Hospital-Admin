@@ -2,10 +2,10 @@
 const state=reactive({
   chartData:{
     title:"任務完成情況",
-    legend:['開發任務1','採購任務2','銷售任務3'],
+    legend:['出院率','佔床率','申報成長'],
     colors:[$c.aql4, $c.cyl4,$c.cbl3],
     colorsD:[$c.aql8,$c.cyl8,$c.bll8],
-    data:[72,14,36],
+    data:[12,64,36],
     radius:["50%","65%","50%"],
     position:[
       ['17%', '55%'],

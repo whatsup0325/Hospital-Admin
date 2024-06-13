@@ -9,6 +9,7 @@ import echartMap from "./portlet/echart-map.vue"
 import mainNav from "@/common/mainNav.vue"
 import externalLinks from "@/common/externalLinks.vue"
 import echartPie from "./portlet/echart-pie.vue"
+import echartPie2 from "./portlet/echart-pie2.vue"
 const router = useRouter();
 
 const { proxy } = getCtx();
@@ -17,6 +18,7 @@ const comps={
   echartBarHoriz,
   echartLine,
   echartPie,
+  echartPie2,
   echartBarHorizScroll,
   echartGaugeTriple,
   echartSunburst,
@@ -49,7 +51,7 @@ const state=reactive({
       {id:"l1",title:"看診進度",component:"echartBarHorizScroll",border:"aYinTechBorderA1",hideTitle:true},
     ]},
     {name:"right",portlets:[
-      {id:"r1",title:"銷售情況",component:"counterGrid",border:"blank",hideTitle:true},
+      {id:"r1",title:"慢箋統計",component:"echartPie2",border:"aYinTechBorderA1",hideTitle:true},
       {id:"r2",title:"門診情況",component:"echartGaugeTriple",border:"aYinTechBorderA1",hideTitle:true},
       {id:"r3",title:"業務利潤佔比",component:"echartSunburst",border:"aYinTechBorderA1"},
     ]},

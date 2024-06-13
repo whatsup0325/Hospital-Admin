@@ -9,13 +9,13 @@ const nav=[
   {lang:"en",label:"DashboardC",path:"/dashboardC-en"},
   {lang:"en",label:"DashboardD",path:"/dashboardD-en"},
   {lang:"cn",label:"門診數據",path:"/dashboardA-cn"},
-  {lang:"cn",label:"急診數據",path:"/dashboardB-cn"},
-  {lang:"cn",label:"手術數據",path:"/dashboardC-cn"},
+  {lang:"cn",label:"住院數據",path:"/dashboardB-cn"},
+  {lang:"cn",label:"急診數據",path:"/dashboardC-cn"},
   {lang:"cn",label:"戰情通報",path:"/dashboardD-cn"},
 
   {lang:"hk",label:"門診數據",path:"/dashboardA-hk"},
-  {lang:"hk",label:"急診數據",path:"/dashboardB-hk"},
-  {lang:"hk",label:"手術數據",path:"/dashboardC-hk"},
+  {lang:"hk",label:"住院數據",path:"/dashboardB-hk"},
+  {lang:"hk",label:"急診數據",path:"/dashboardC-hk"},
   {lang:"hk",label:"戰情通報",path:"/dashboardD-hk"},
 ]
 
