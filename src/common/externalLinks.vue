@@ -10,9 +10,9 @@ const inited=ref(false)
 // ]
 
 const langs=[
-  {label:"本年度",value:"cn"},
+  // {label:"本年度",value:"cn"},
   {label:"今日",value:"hk"},
-  // {label:"English",value:"en"},
+  {label:"English",value:"en"},
 ]
 
 const goToLink=(item)=>{

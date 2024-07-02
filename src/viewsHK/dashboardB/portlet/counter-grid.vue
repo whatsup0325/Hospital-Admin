@@ -1,11 +1,11 @@
 <script setup>
 const state=reactive({
   arry:[
-    {title:"軟件銷售額",icon:"i carbon:ibm-z-cloud-mod-stack",unit:"萬元",total:"1874"},
-    {title:"硬件銷售額",icon:"i carbon:chip",unit:"萬元",total:"3276"},
-    {title:"技術服務",icon:"i carbon:user-speaker",unit:"萬元",total:"315"},
-    {title:"安全服務",icon:"i carbon:rule",unit:"萬元",total:"769"},
-    {title:"總支出費用",icon:"i carbon:airline-digital-gate",unit:"萬元",total:"23769"},
+    {title:"門診就診",icon:"i carbon:chip",unit:"人數",total:"3276"},
+    {title:"14日非計畫再住院",icon:"i carbon:ibm-z-cloud-mod-stack",unit:"人數",total:"1874"},
+    {title:"急性病房平均住院",icon:"i carbon:user-speaker",unit:"天數",total:"5"},
+    {title:"一般病房平均住院",icon:"i carbon:rule",unit:"天數",total:"14"},
+    {title:"總出院",icon:"i carbon:airline-digital-gate",unit:"人數",total:"239"},
   ],
 })
 

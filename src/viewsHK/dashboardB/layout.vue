@@ -2,9 +2,12 @@
 import echartBarHoriz from "./portlet/echart-barHoriz.vue"
 import echartBar from "./portlet/echart-bar.vue"
 import echartLine from "./portlet/echart-line.vue"
+import echartLine2 from "./portlet/echart-line2.vue"
 import echartBarLine from "./portlet/echart-barLine.vue"
 import echartBarHorizScroll from "./portlet/echart-barHorizScroll.vue"
 import echartGaugeTriple from "./portlet/echart-gaugeTriple.vue"
+import echartGaugeTriple2 from "./portlet/echart-gaugeTriple2.vue"
+
 import echartsRadar from "./portlet/echarts-radar.vue"
 import echartPie from "./portlet/echart-pie.vue"
 import echartsPictorialBar from "./portlet/echarts-PictorialBar.vue"
@@ -18,9 +21,11 @@ const { proxy } = getCtx();
 const comps={
   echartBarHoriz,
   echartLine,
+  echartLine2,
   echartBar,
   echartBarHorizScroll,
   echartGaugeTriple,
+  echartGaugeTriple2,
   echartsRadar,
   counterGrid,
   echartPie,
@@ -47,23 +52,22 @@ const state=reactive({
   // },
   
   areas:[
-    {name:"left",portlets:[
-      {id:"l2",title:"收支情況",component:"echartsPictorialBar",border:"aYinTechBorderA1",hideTitle:true},
-      {id:"l3",title:"業務收益情況",component:"echartBar",border:"aYinTechBorderA1",hideTitle:true},
-      {id:"l1",title:"銷售任務",component:"echartsRadar",border:"aYinTechBorderA1",hideTitle:true},
+  {name:"left",portlets:[
+      {id:"l2",title:"科別統計",component:"echartPie",border:"aYinTechBorderA1",hideTitle:true},
+      {id:"l3",title:"門診人次",component:"echartLine2",border:"aYinTechBorderA1",hideTitle:true},
+      {id:"l1",title:"看診進度",component:"echartBarHorizScroll",border:"aYinTechBorderA1",hideTitle:true},
     ]},
     {name:"center",portlets:[
       {id:"c1",title:"銷售情況",component:"counterGrid",border:"blank",hideTitle:true},
-      {id:"c2",title:"任務完成情況",component:"echartPie",border:"aYinTechBorderA1",hideTitle:true},
-      {id:"c3",title:"業務利潤佔比",component:"echartGaugeTriple",border:"aYinTechBorderA1",hideTitle:true},
-      {id:"c4",title:"業務利潤佔比",component:"echartBarLine",border:"aYinTechBorderB4"},
+      {id:"c2",title:"門診情況",component:"echartGaugeTriple2",border:"aYinTechBorderA1",hideTitle:true},
+      {id:"c3",title:"住院情況",component:"echartGaugeTriple",border:"aYinTechBorderA1",hideTitle:true},
+      {id:"c4",title:"每月變化",component:"echartBarLine",border:"aYinTechBorderB4"},
     ]},
     {name:"right",portlets:[
       {id:"r1",title:"住院占床率",component:"echartLine",border:"aYinTechBorderA1",hideTitle:true},
-      {id:"r2",title:"任務完成情況",component:"echartBarHoriz",border:"aYinTechBorderA1",hideTitle:true},
-      {id:"r3",title:"業務利潤佔比",component:"echartBarHorizScroll",border:"aYinTechBorderA1",hideTitle:true},
-    ]},
-    
+      {id:"r2",title:"戰情數據",component:"echartBar",border:"aYinTechBorderA1",hideTitle:true},
+      {id:"r3",title:"戰情數據2",component:"echartBar",border:"aYinTechBorderA1",hideTitle:true},
+    ]},    
   ]
       
 })
@@ -129,7 +133,7 @@ onMounted(()=>{ })
         </template>
       </div>
     </div>
-    <systemTitleA1 :config="systemTitleConfig">今日住院數據儀錶板</systemTitleA1>
+    <systemTitleA1 :config="systemTitleConfig">HIS System Data</systemTitleA1>
   </div>
 </template>
 <style lang="less">

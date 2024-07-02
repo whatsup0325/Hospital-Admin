@@ -115,7 +115,7 @@ onMounted(()=>{
         </template>
       </div>
     </div>
-    <systemTitleA2 :config="systemTitleConfig">今日門診數據儀錶板</systemTitleA2>
+    <systemTitleA1 :config="systemTitleConfig">今日門診數據儀錶板</systemTitleA1>
     <echartMap></echartMap>
   </div>
 </template>

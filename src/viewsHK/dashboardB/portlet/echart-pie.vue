@@ -1,11 +1,11 @@
 <script setup>
 const state=reactive({
   chartData:{
-    legend:['軟件','硬件','服務','安全','廣告'],
+    legend:['心臟內科','免疫風濕科','肝膽腸胃科','眼科','骨科'],
     colors:[$c.bll5,$c.inl3,$c.aql3,$c.yel3,$c.orl3,$c.rel3],
     data:[325,252,323,183,120,43]
   },
-  counter:{title:"费用总量",num:1723},
+  counter:{title:"總人數",num:1523},
   chartOption:{}
 })
 
@@ -34,7 +34,6 @@ const processOption=()=>{
       x:'center',
       top:'32%',
       textStyle:{
-        color:$c.bll5,
         fontSize:24,
         fontWeight:"bold",
         lineHeight:30
@@ -47,7 +46,7 @@ const processOption=()=>{
     legend: {
       orient: 'vertical',//horizontal
       show:true,
-      right: '40',
+      right: '20',
       top:'22%',
       data:[],
       formatter:(name)=>{
@@ -78,7 +77,7 @@ const processOption=()=>{
       {
         name:'数据类别',
         type:'pie',
-        radius: ['55%', '80%'],
+        radius: ['40%', '65%'],
         center: ['30%', '50%'],
         //roseType: 'radius',
         avoidLabelOverlap: false,
@@ -113,7 +112,7 @@ onMounted(() => {
 })
 </script>
 <template>
-  <div class="echart-wrap-dashB">
+  <div class="echart-wrap">
     <div class="total-digital">
       <span class="desc">{{state.counter.title}}</span>
       <DigitalTransform  class="counter" :value="state.counter.num" :interval="1000" :dislocation="false" ></DigitalTransform>
@@ -122,8 +121,8 @@ onMounted(() => {
   </div>
 </template>
 <style lang="less">
-.echart-wrap-dashB{height: 100%;
-  .total-digital{.fc(@cyl5); text-align: center; width: 100px;  .poa; top:52%; left:19%; .fixc("y");
+.echart-wrap{height: 100%;
+  .total-digital{.fc(@cyl5); text-align: center; width: 80px;  .poa; top:52%; left:20%; .fixc("y");
     .desc{display:block; font-size: 18px; margin:0 0 10px 0;}
     .counter{display:block; .ff("en0"); font-size: 24px; font-weight: bold;}
   }

@@ -11,7 +11,7 @@ const router = createRouter({
     {
       path: "/",
       name: "layout",
-      redirect:"/dashboardA-hk",
+      redirect:"/dashboardB-hk",
     },
     {
       path: "/dashboardA-en",

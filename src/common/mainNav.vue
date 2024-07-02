@@ -13,10 +13,10 @@ const nav=[
   {lang:"cn",label:"急診數據",path:"/dashboardC-cn"},
   {lang:"cn",label:"戰情通報",path:"/dashboardD-cn"},
 
-  {lang:"hk",label:"門診數據",path:"/dashboardA-hk"},
-  {lang:"hk",label:"住院數據",path:"/dashboardB-hk"},
-  {lang:"hk",label:"急診數據",path:"/dashboardC-hk"},
-  {lang:"hk",label:"戰情通報",path:"/dashboardD-hk"},
+  {lang:"hk",label:"概觀",path:"/dashboardB-hk"},
+  {lang:"hk",label:"Demo1",path:"/dashboardA-hk"},
+  {lang:"hk",label:"Demo2",path:"/dashboardC-hk"},
+  {lang:"hk",label:"Demo3",path:"/dashboardD-hk"},
 ]
 
 const goToRouter=(item)=>{
