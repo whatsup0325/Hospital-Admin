@@ -31,10 +31,10 @@ const decoFrameConfig={
 .screenB-counterGrid{ margin-top:30px; display: grid; grid-template-columns: repeat(5,1fr); height: 100%; grid-template-rows: repeat(1,1fr); grid-gap: 12px;  position: relative;
   .content-wrap{.por;  text-align: center;
     .decoFrameA2{margin:0 auto;}
-    .block-title{.ff("cn1"); .fc(@cbl3); font-size: 20px; line-height: 1.5; 
+    .block-title{.ff("cn1"); .fc(@cbl3); font-size: 24px; line-height: 1.5; 
       .unit{display:block; font-size: 12px;}
     }
-    .numbers{display:inline-block; text-align: center; height:38px; line-height: 1; font-size: 38px; .ff("en0");  position: relative; vertical-align: text-top; .fc(@cbl3); }
+    .numbers{display:inline-block; text-align: center; height:38px; line-height: 1; font-size: 42px; .ff("en0");  position: relative; vertical-align: text-top; .fc(@cbl3); }
   }
 }
 </style>

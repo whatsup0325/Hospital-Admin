@@ -170,7 +170,7 @@ onMounted(()=>{ })
     }
     &.area-center{grid-template-columns: repeat(2,1fr);
       .portlet-wrapper{
-        &:nth-child(1){grid-area: 1 / 1 / 8 / 3;}
+        &:nth-child(1){grid-area: 2 / 1 / 8 / 3;}
         &:nth-child(2){grid-area: 9 / 1 / 15 / 3;}
         &:nth-child(3){grid-area: 16 / 1 / 25 / 3;}
       }

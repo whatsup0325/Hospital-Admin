@@ -2,7 +2,7 @@
 const state=reactive({
   arry:[
     {title:"門診健保申報平均每件診療點數",icon:"i carbon:calculator",total:"276"},
-    {title:"一般急性病房平均住院",icon:"i carbon:hotel",unit:"天數",total:"14"},
+    {title:"一般急性病房平均住院天數",icon:"i carbon:hotel",total:"14"},
     {title:"門診藥費點數佔總醫療費用點數",icon:"i carbon:pills-add",total:"150"},
     {title:"門診健保申報醫療費用點數成長率",icon:"i carbon:analytics-reference",total:"9"},
   ],
@@ -29,10 +29,10 @@ const decoFrameConfig={
 .screenB-counterGrid{ margin-top:30px; display: grid; grid-template-columns: repeat(4,1fr); height: 100%; grid-template-rows: repeat(1,1fr); grid-gap: 12px;  position: relative;
   .content-wrap{.por;  text-align: center;
     .decoFrameA2{margin:0 auto;}
-    .block-title{.ff("cn1"); .fc(@cbl3); font-size: 20px; line-height: 1.5; 
+    .block-title{.ff("cn1"); .fc(@cbl3); font-size: 24px; line-height: 1.5; 
       .unit{display:block; font-size: 12px;}
     }
-    .numbers{display:inline-block; text-align: center; height:38px; line-height: 1; font-size: 38px; .ff("en0");  position: relative; vertical-align: text-top; .fc(@cbl3); }
+    .numbers{display:inline-block; text-align: center; height:38px; line-height: 1; font-size: 42px; .ff("en0");  position: relative; vertical-align: text-top; .fc(@cbl3); }
   }
 }
 </style>
