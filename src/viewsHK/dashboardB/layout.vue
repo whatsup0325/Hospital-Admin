@@ -12,6 +12,8 @@ import echartsRadar from "./portlet/echarts-radar.vue"
 import echartPie from "./portlet/echart-pie.vue"
 import echartsPictorialBar from "./portlet/echarts-PictorialBar.vue"
 import counterGrid from "./portlet/counter-grid.vue"
+import counterGrid2 from "./portlet/counter-grid2.vue"
+import counterGrid3 from "./portlet/counter-grid3.vue"
 import mainNav from "@/common/mainNav.vue"
 import externalLinks from "@/common/externalLinks.vue"
 
@@ -28,6 +30,8 @@ const comps={
   echartGaugeTriple2,
   echartsRadar,
   counterGrid,
+  counterGrid2,
+  counterGrid3,
   echartPie,
   echartsPictorialBar,
   echartBarLine
@@ -59,9 +63,9 @@ const state=reactive({
     ]},
     {name:"center",portlets:[
       {id:"c1",title:"銷售情況",component:"counterGrid",border:"blank",hideTitle:true},
-      {id:"c2",title:"門診情況",component:"echartGaugeTriple2",border:"aYinTechBorderA1",hideTitle:true},
-      {id:"c3",title:"住院情況",component:"echartGaugeTriple",border:"aYinTechBorderA1",hideTitle:true},
-      {id:"c4",title:"每月變化",component:"echartBarLine",border:"aYinTechBorderB4"},
+      {id:"c2",title:"門診情況",component:"counterGrid2",border:"blank",hideTitle:true},
+      {id:"c3",title:"住院情況",component:"counterGrid3",border:"blank",hideTitle:true},
+      // {id:"c4",title:"每月變化",component:"",border:""},
     ]},
     {name:"right",portlets:[
       {id:"r1",title:"住院占床率",component:"echartLine",border:"aYinTechBorderA1",hideTitle:true},
@@ -167,9 +171,8 @@ onMounted(()=>{ })
     &.area-center{grid-template-columns: repeat(2,1fr);
       .portlet-wrapper{
         &:nth-child(1){grid-area: 1 / 1 / 8 / 3;}
-        &:nth-child(2){grid-area: 8 / 1 / 15 / 2;}
-        &:nth-child(3){grid-area: 8/ 2 / 15 / 3;}
-        &:nth-child(4){grid-area: 15 / 1 / 25 / 3;}
+        &:nth-child(2){grid-area: 9 / 1 / 15 / 3;}
+        &:nth-child(3){grid-area: 16 / 1 / 25 / 3;}
       }
     }
     

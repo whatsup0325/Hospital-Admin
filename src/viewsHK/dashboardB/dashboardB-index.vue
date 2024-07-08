@@ -6,7 +6,7 @@ const state=reactive({
     height:930,
     backgroundFillAll:true,
     backgroundName:"A2",
-    chartCount:9
+    chartCount:6
   }
 })
 

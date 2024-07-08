@@ -1,12 +1,10 @@
 <script setup>
 const state=reactive({
   arry:[
-    {title:"門診就診人數",icon:"i carbon:user-speaker",total:"3276"},
-    {title:"門診初診率",icon:"i carbon:help-desk",unit:"%",total:"1874"},
-    {title:"門診病人住院率",icon:"i carbon:task-add",unit:"%",total:"5"},
-    {title:"平均住院日",icon:"i carbon:hotel",unit:"天數",total:"5"},
-    {title:"住院佔床率",icon:"i carbon:hospital-bed",unit:"%",total:"54"},
-    
+    {title:"門診健保申報平均每件診療點數",icon:"i carbon:calculator",total:"276"},
+    {title:"一般急性病房平均住院",icon:"i carbon:hotel",unit:"天數",total:"14"},
+    {title:"門診藥費點數佔總醫療費用點數",icon:"i carbon:pills-add",total:"150"},
+    {title:"門診健保申報醫療費用點數成長率",icon:"i carbon:analytics-reference",total:"9"},
   ],
 })
 
@@ -28,7 +26,7 @@ const decoFrameConfig={
   </div>
 </template>
 <style lang="less" scoped>
-.screenB-counterGrid{ margin-top:30px; display: grid; grid-template-columns: repeat(5,1fr); height: 100%; grid-template-rows: repeat(1,1fr); grid-gap: 12px;  position: relative;
+.screenB-counterGrid{ margin-top:30px; display: grid; grid-template-columns: repeat(4,1fr); height: 100%; grid-template-rows: repeat(1,1fr); grid-gap: 12px;  position: relative;
   .content-wrap{.por;  text-align: center;
     .decoFrameA2{margin:0 auto;}
     .block-title{.ff("cn1"); .fc(@cbl3); font-size: 20px; line-height: 1.5; 
